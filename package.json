@@ -2,7 +2,7 @@
   "name": "covid-19-tracker",
   "version": "1.0.0",
   "description": "A bot that uses API to tell you how many cases of COVID-19 (Coronavirus) around the world.",
-  "index": "index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
