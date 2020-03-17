@@ -20,7 +20,7 @@ function messageCountryEmbed(info) {
     {name: '**Recovered**', value: `${info.recovered} have recovered from COVID-19 in ${info.country}.`, inline: true},
     {name: '**Critical**', value: `${info.critical} in critical condition in ${info.country}.`, inline: true}
   )
-  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
+  .setFooter('https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 function messageWorldEmbed(info) {
@@ -35,7 +35,7 @@ function messageWorldEmbed(info) {
     {name: '**Recovered**', value: `${info.recovered} have recovered from COVID-19.`, inline: true},
     {name: '**Last Updated**', value: `${new Date(info.updated)}`, inline: true}
   )
-  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
+  .setFooter('https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 function messageHelpEmbed() {
@@ -48,7 +48,7 @@ function messageHelpEmbed() {
     {name: '**Get Statistics Worldwide**', value: 'Type ``?corona``', inline: false},
     {name: '**Get Statistics for A Specific Country**', value: 'Type ``?corona [country name]``', inline: false}
   )
-  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
+  .setFooter('https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 function messageErrorEmbed() {
@@ -57,7 +57,7 @@ function messageErrorEmbed() {
   .setTitle('COVID-19 Tracker')
 	.setTimestamp()
   .setDescription(`No country found or check your spelling.`)
-  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
+  .setFooter('https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 bot.login(TOKEN);
