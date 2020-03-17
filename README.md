@@ -4,9 +4,11 @@ This discord bot utilizes an API to send statistics about the novel coronavirus 
 #Dependencies
 This bot requires discord.js and dotenv.
 ```bash
-$ npm install discord.js```
+$ npm install discord.js
+```
 ```bash
-$ npm install dotenv```
+$ npm install dotenv
+```
 
 #API
 All the information comes from (https://github.com/NovelCOVID/API).
