@@ -13,14 +13,14 @@ function messageCountryEmbed(info) {
 	.setTimestamp()
   .setDescription(`Statistics for COVID-19 in ${info.country}`)
   .addFields(
-    {name: '**Cases**', value: `There are ${info.cases} cases in ${info.country}.`, inline: true},
-    {name: '**Cases Today**', value: `There have been ${info.todayCases} cases today.`, inline: true},
-    {name: '**Deaths**', value: `There are a total of ${info.deaths} deaths.`, inline: true},
-    {name: '**Deaths Today**', value: `There has been ${info.todayDeaths} deaths today.`, inline: true},
+    {name: '**Cases**', value: `There is ${info.cases} case(s) in ${info.country}.`, inline: true},
+    {name: '**Cases Today**', value: `There is ${info.todayCases} case(s) today.`, inline: true},
+    {name: '**Deaths**', value: `There is ${info.deaths} death(s).`, inline: true},
+    {name: '**Deaths Today**', value: `There is ${info.todayDeaths} deaths today.`, inline: true},
     {name: '**Recovered**', value: `${info.recovered} have recovered from COVID-19 in ${info.country}.`, inline: true},
-    {name: '**Critical**', value: `${info.critical} are in critical condition in ${info.country}.`, inline: true}
+    {name: '**Critical**', value: `${info.critical} in critical condition in ${info.country}.`, inline: true}
   )
-  .setFooter('Made by Digno JR Teogalbo');
+  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 function messageWorldEmbed(info) {
@@ -30,12 +30,12 @@ function messageWorldEmbed(info) {
 	.setTimestamp()
   .setDescription(`Statistics for COVID-19 Worldwide`)
   .addFields(
-    {name: '**Cases**', value: `There are ${info.cases} cases.`, inline: true},
-    {name: '**Deaths**', value: `There are a total of ${info.deaths} deaths.`, inline: true},
+    {name: '**Cases**', value: `There is ${info.cases} total cases.`, inline: true},
+    {name: '**Deaths**', value: `There is a total of ${info.deaths} deaths.`, inline: true},
     {name: '**Recovered**', value: `${info.recovered} have recovered from COVID-19.`, inline: true},
     {name: '**Last Updated**', value: `${new Date(info.updated)}`, inline: true}
   )
-  .setFooter('Made by Digno JR Teogalbo');
+  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 function messageHelpEmbed() {
@@ -48,7 +48,7 @@ function messageHelpEmbed() {
     {name: '**Get Statistics Worldwide**', value: 'Type ``?corona``', inline: false},
     {name: '**Get Statistics for A Specific Country**', value: 'Type ``?corona [country name]``', inline: false}
   )
-  .setFooter('Made by Digno JR Teogalbo');
+  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 function messageErrorEmbed() {
@@ -57,7 +57,7 @@ function messageErrorEmbed() {
   .setTitle('COVID-19 Tracker')
 	.setTimestamp()
   .setDescription(`No country found or check your spelling.`)
-  .setFooter('Made by Digno JR Teogalbo');
+  .setFooter('Made by Digno JR Teogalbo', 'https://github.com/dignojrteogalbo/covid-19-bot');
 }
 
 bot.login(TOKEN);
